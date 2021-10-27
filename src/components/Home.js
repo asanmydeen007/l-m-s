@@ -13,6 +13,7 @@ import "./style.css";
 import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse'
 import Rubberband from 'react-reveal/RubberBand'
+import Zoom from 'react-reveal/Zoom'
 
 function Home() {
   return (
@@ -89,10 +90,10 @@ function Home() {
                 class="col-lg-6 order-1 order-lg-2"
                 
               >
-              <Fade> <img src={about} class="img-fluid" alt="" /> </Fade>
+              <Zoom delay={1000}> <img src={about} class="img-fluid" alt="" /> </Zoom>
               </div>
               <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-               <Fade bottom>
+               <Fade bottom delay={1000}>
                 <h3>Mydeen's E-Learning Website.</h3>
                 <p class="fst-italic">Enhance and grow your talent with us.</p></Fade>
                 
@@ -272,9 +273,10 @@ function Home() {
         <section id="trainers" class="trainers">
           <div class="container" data-aos="fade-up">
             <div class="row" data-aos="zoom-in" data-aos-delay="100">
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                <div class="member">
-                  <img src={trainer1} class="img-fluid" alt="" />
+             <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+               <div class="member">
+                <img src={trainer1} class="img-fluid" alt="" />
+                <Zoom delay={600}>
                   <div class="member-content">
                     <h4>Asan Mydeen</h4>
                     <span>Web Developer</span>
@@ -282,35 +284,35 @@ function Home() {
                       Asan Mydeen is an experienced web developer and has
                       knowledge in latest frameworks.
                     </p>
-                  </div>
+                  </div></Zoom>
                 </div>
               </div>
 
               <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                 <div class="member">
                   <img src={trainer2} class="img-fluid" alt="" />
-                  <div class="member-content">
+                  <Zoom delay={600}><div class="member-content">
                     <h4>Udhaya Kumar</h4>
                     <span>Machine Learning Engineer.</span>
                     <p>
                       Udhaya Kumar has served as a ML developer in top
                       companies.
                     </p>
-                  </div>
+                  </div></Zoom>
                 </div>
               </div>
 
               <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                 <div class="member">
                   <img src={trainer3} class="img-fluid" alt="" />
-                  <div class="member-content">
+                 <Zoom delay={600}> <div class="member-content">
                     <h4>Vignesh</h4>
                     <span> Java Programmer</span>
                     <p>
                       Vignesh is a well-versed java developer for the past
                       15years.
                     </p>
-                  </div>
+                  </div></Zoom>
                 </div>
               </div>
             </div>
